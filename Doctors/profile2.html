@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <title>Profile</title>
+    <style>
+      .doctorImage {
+        width: 200px;
+        height: 200px;
+        /* border-radius: 50%; */
+      }
+      h2 {
+        text-decoration: 3px underline lime;
+      }
+      ul {
+        list-style: none;
+      }
+
+      ul li::before {
+        content: "\2022";
+        color: magenta;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+        font-size: 25px;
+      }
+      
+      
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> Heathify</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ol class="navbar-nav me-auto mb-2 mb-lg-0" >
+            <li class="nav-item" >
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/index.html"
+                >Home</a
+              >
+            </li>
+            
+           
+
+            <li class="nav-item">
+              <a class="nav-link active" href="/location.html"
+                >Nearby Hospitals</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="/Covid19/indexCovid.html"
+                >Live Covid Tracker</a
+              >
+            </li>
+          </ol>
+          <!-- <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+    <h1 class="text-center my-1" style="color: Navy">Profile Page</h1>
+    <div class="container my-3 mx-5">
+      <div class="col-md-15 mx-4">
+        <div
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          style="width: 100%; height: 200px; background-color: cyan"
+        >
+          <div class="col-auto d-none d-lg-block my-2 mx-2">
+            <img
+              src="images/doctor-logo.jpg"
+              class="doctorImage"
+              alt="Slow Internet"
+            />
+          </div>
+          <div class="col p-3 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary"
+              >Gastroenterologist</strong
+            >
+            <h3 class="mb-0">Dr. Manish Chauhan</h3>
+            <div class="mb-1 text-muted">MBBS,MD,DM(Gastroenterology)</div>
+            <p
+              class="card-text mb-auto"
+              style="color: rgb(245, 116, 228); font-size: 20px"
+            >
+            Gastroenterologist is a a medical practitioner qualified to diagnose and treat disorders of the stomach and intestines.
+             
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container my-3 mx-5">
+      <div
+        class="my-1 mx-4"
+        style="
+          background-color: Lavender;
+          width: 1250px;
+          padding-inline-end: 10%;
+        "
+      >
+        <section class="mx-2">
+          <h2>About</h2>
+          <ul>
+            <li style="font-size: 20px">
+              Dr. Manish Chauhan is one of the best Gastroenterologist and Liver Transplant surgeon in your city.He is presently working as the executive Director of the Department of Gastroenterology and Heptology at Fortis Hospital.He has an Experience of 35 years.
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div
+        class="my-3 mx-4"
+        style="background-color: Ivory; width: 1250px; padding-inline-end: 10%"
+      >
+        <section class="mx-2">
+          <h2>Specialities</h2>
+          <ul >
+            <li style="font-size: 20px">Gastroenterologist and Liver Transplant Surgeon</li>
+          </ul>
+        </section>
+      </div>
+      <div
+        class="my-3 mx-4"
+        style="
+          background-color: Cornsilk;
+          width: 1250px;
+          padding-inline-end: 10%;
+        "
+      >
+       
+      </div>
+      <div
+        class="my-3 mx-4"
+        style="
+          background-color: GhostWhite;
+          width: 1250px;
+          padding-inline-end: 10%;
+        "
+      >
+        <section class="mx-2">
+          <h2>Education</h2>
+          <ul>
+            <li style="font-size: 20px">MBBS,MD(Medicine),DM(Gastroenterology)</li>
+          </ul>
+        </section>
+      </div>
+      <div
+        class="my-3 mx-4"
+        style="
+          background-color: HoneyDew;
+          width: 1250px;
+          padding-inline-end: 10%;
+        "
+      >
+        <section class="mx-2">
+          <h2>Achievements</h2>
+          <ul>
+            <li style="font-size: 20px">
+                2004 Chairman's Award
+            </li>
+            <li style="font-size: 20px">
+                2006 Program Director's Award
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white pt-6 pb-5 footer my-4" style="height: 90px;" >
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text mb-4 font-weight-bold text-info" style="font-size: 30px;text-decoration:3px underline dotted turquoise;">
+              <i>Team Cinque</i>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

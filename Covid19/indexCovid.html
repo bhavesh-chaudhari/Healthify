@@ -1,0 +1,236 @@
+<!-- CODE EXPLAINED TUTORIALS -->
+<!-- youtube.com/CodeExplained -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+    crossorigin="anonymous"
+  />
+  
+    <link rel="stylesheet" href="./resources/css/covid.css" />
+    <title>COVID-19 STATS - JAVASCRIPT</title>
+    <style>
+       h1 {
+        text-decoration: 8px underline navy;
+      }
+       h2 {
+        text-decoration: 3px underline lime;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      p {
+        background-color:azure;
+        padding-left: 10px;
+        padding-top: 10px;
+      }
+      h3{
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-decoration:3px underline dotted turquoise;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex">
+      <div class="container-fluid">
+        <a class="navbar-brand" style="color:turquoise;" href="#">
+         Heathify</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/index.html"
+                >Home</a
+              >
+            </li>
+            
+           
+            <li class="nav-item">
+              <a class="nav-link active" href="/location.html"
+                >Nearby Hospitals</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="indexCovid.html"
+                > <h6 class="my-1" >Covid-19 Section <span class="badge bg-warning">New</span></h6></a
+              >
+              
+            </li>
+           
+          </ul>
+          <!-- <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+
+  <div class="mx-2">
+    <section>
+      <h1 class="text-center" >Covid-19 STATS</h1>
+    </section>
+    <section>
+      <h2 >What Is Coronavirus ?</h2>
+      <p style="font-size: 20px;" >
+        Coronaviruses are a family of viruses that can cause respiratory illness in humans.They get their name,"CORONA",from the many crown-like spikes on the surface of the virus.Severe acute respiratory syndrome(SARS),Middle East respiratory syndrome(MERS) and common cold are examples of coronaviruses that causes illness in humans. 
+      </p>
+      <h2>Where it Started ?</h2>
+      <p  style="font-size: 20px;">
+        The new strain of coronavirus,Covid-19,was first reported in wuhan,China in December 2019.The Virus has since spread to all the continent(except Antarctica).
+      </p>
+      <h2>How can you get affected ?</h2>
+      <p  style="font-size: 20px;">
+        Covid-19 enters your body through your mouth,nose or eyes(directly from the airborne droplets or from transfer of the virus from your hands to your face).The Virus travels to the back of your nasal passsages and mucous membrane in the back of your throat.It attches to cells there,begins to multiply and moves into lung tissue.From there,virus can spread to other body tissues.
+      </p>
+      <h2>
+        Stay Updated About Covid-19 Stats !
+      </h2>
+    </section>
+
+  </div>
+   
+    <header id="landHere">
+      <div class="logo">
+        <img src="./resources/img/logo-3.png" alt="" />
+        <p1>LIVE CORONAVIRUS STATS</p1>
+      </div>
+      <nav>
+        <ul>
+          <!-- <li><a href="#">HOME</a></li> -->
+          <!-- <li><a href="#">ABOUT</a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="stats">
+        <div class="latest-report">
+          <div class="country">
+            <div class="name">Loading...</div>
+            <div class="change-country">change</div>
+            <div class="search-country hide">
+              <div class="search-box">
+                <input
+                  type="text"
+                  id="search-input"
+                  placeholder="Search Country..."
+                />
+                <img class="close" src="./resources/img/close.svg" alt="" />
+              </div>
+              <div class="country-list"></div>
+            </div>
+          </div>
+          <div class="total-cases">
+            <div class="title">Total Cases</div>
+            <div class="value">0</div>
+            <div class="new-value">+0</div>
+          </div>
+          <div class="recovered">
+            <div class="title">Recovered</div>
+            <div class="value">0</div>
+            <div class="new-value">+0</div>
+          </div>
+          <div class="deaths">
+            <div class="title">Deaths</div>
+            <div class="value">0</div>
+            <div class="new-value">+0</div>
+          </div>
+        </div>
+        <div class="chart">
+          <canvas id="axes_line_chart"></canvas>
+        </div>
+      </div>
+    </main>
+    <section class="my-2">
+      <h2>Who is most at risk for getting COVID-19 ?</h2>
+      <h3>Persons at greatest risk of contracting COVID-19 are:</h3>
+      <p>
+        <ul style="font-size: 20px;">
+          <li>People who live in or have recently traveled to any area with ongoing active cases spread.</li>
+          <li>People over age 60 who have pre-existing medical conditions or a weakened immune system.</li>
+        </ul>
+      </p>
+      <h2>What are the symptoms of the novel coronavirus(COVID-19) infection ?</h2>
+      <h3>The CDC says you may have coronavirus if you have these symptoms or combination of symptoms:</h3>
+      <p >
+        <ul style="font-size: 20px;">
+          <li>Fever or chills.</li>
+          <li>Cough</li>
+          <li>Shortness of breath or difficulty in breathing.</li>
+          <li>Tiredness.</li>
+        </ul>
+      </p>
+    </section>
+
+   
+
+   
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+      integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      language="JavaScript"
+      src="http://www.geoplugin.net/javascript.gp"
+      type="text/javascript"
+    ></script>
+    <script src="resources/js/countries.js"></script>
+    <script src="resources/js/app.js"></script>
+  </body>
+  <hr>
+  <!-- <footer class="bg-dark text-white pt-6 pb-5 footer my-4" style="height: 90px;width: 200px;" >
+    <div class="container text-center text-md-left">
+      <div class="row text-center text-md-left">
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text mb-4 font-weight-bold text-info" style="font-size: 30px;text-decoration:3px underline dotted turquoise;">
+            <i>Team Cinque</i>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </footer> -->
+  <footer class="bg-dark text-white pt-6 pb-5 footer my-4" style="height: 90px;" >
+    <div class="container text-center text-md-left">
+      <div class="row text-center text-md-left">
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text mb-4 font-weight-bold text-info" style="font-size: 30px;text-decoration:3px underline dotted turquoise;">
+            <i>Team Cinque</i>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</html>
