@@ -19,7 +19,7 @@
       #map {
         height: 400px;
         /* The height is 400 pixels */
-        width: 48%;
+        width: 100%;
         /* The width is the width of the web page */
         float: left;
       }
@@ -35,7 +35,7 @@
     </style>
     <style>
       iframe {
-        width: 48%;
+        width: 100%;
         height: 400px;
         margin: 0 auto;
         display: block;
@@ -112,17 +112,7 @@
             </li>
             
           </ul>
-          <!-- <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form> -->
+          
         </div>
       </div>
     </nav>
@@ -150,17 +140,21 @@
       </p>
     </div>
 
-    <div>
-      <div id="map" class="mx-2"></div>
-      <div class="my-3">
-        <iframe
-          id="Hosp"
-          src="https://maps.google.com/maps?q=Hospitals%20and%20medicals%20near%20me&t=&z=13&ie=UTF8&iwloc=&output=embed"
-          frameborder="0"
-        ></iframe>
-      </div>
+   <div class="container my-3">
+        <div
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+        >
+          <div id="map" class="mx-2"></div>
+          <div class="my-3">
+            <iframe
+              id="Hosp"
+              src="https://maps.google.com/maps?q=Hospitals%20and%20medicals%20near%20me&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
     </div>
-    <div class="container my-4 mx-4" id="doct">
+    <div class="container my-4" id="doct">
       <div class="col-md-15 mx-4">
         <div
           class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
