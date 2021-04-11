@@ -1,3 +1,4 @@
+// This is where all the country data and search bar of live covid stats is taken care of.
 // ALL COUNTRY NAMES WITH THEIR ISO CODE
 let country_list = [  
     { name: 'Ecuador', code: 'EC' },
