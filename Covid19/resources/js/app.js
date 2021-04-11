@@ -1,4 +1,4 @@
-
+// This is where Geoplugin Api is called and chart.js has been used.The error in months axis was resolved.
 // SELECT ALL ELEMENTS
 const country_name_element = document.querySelector(".country .name");
 const total_cases_element = document.querySelector(".total-cases .value");
